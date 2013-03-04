@@ -137,7 +137,7 @@ div.content {
 
 div.footer {
     border-top: 1px solid #ccc;
-    clear: left;
+    clear: both;
     font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     height: 6em;
@@ -163,6 +163,21 @@ div.footer {
 
 div.grants, div.about {
     float: left;
-    margin: 0 $gutter 2em $gutter;
-    width: $width/2 - ($gutter * 2);
+    margin: 0 $gutter 0 $gutter;
+    padding: 0 0 2em 0;
+    width: $width/2 - ($gutter * 2) - 1;
+}
+
+div.grants {
+    float: left;
+}
+
+div.about {
+    float: right;
+}
+
+html.lt-ie7 {    
+    div.grants, div.about {
+        width: $width/2 - ($gutter * 2) - 25;
+    }
 }
