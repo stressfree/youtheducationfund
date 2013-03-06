@@ -127,6 +127,21 @@ div.slogan {
 div.content {
     ul {
         margin: -0.6em 0 0.5em 0;
+        
+        &.contactdetails {
+            margin: 0 0 0.5em 0;
+            
+            li {
+                list-style: none;
+                font-style: italic;
+                margin: 0 0 1em 4em;
+                
+                span {
+                    position: relative;
+                    margin: 0 0 0 -1.5em;
+                }
+            }
+        }
     }
 
     li {
